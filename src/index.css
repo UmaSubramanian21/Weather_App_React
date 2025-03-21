@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+
+/* body {
     background-image: url('./images/bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
-}
+} */
