@@ -170,7 +170,8 @@ function Weather() {
                         🔄
                     </span>
                 </div>
-                <div className="flex flex-col gap-10 text-2xl">
+                <div 
+                className="flex flex-col gap-10 text-2xl text-blue-900 font-extrabold bg-transparent">
                     <p>Weather: {weather}</p>
                     <p>Temperature: {temp} {celcius}</p>
                     <p>Description: {desc}</p>
