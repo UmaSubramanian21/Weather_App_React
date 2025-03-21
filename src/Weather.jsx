@@ -22,8 +22,8 @@ function Weather() {
     // API call using axios
 
     function getAPI() {
-        const data = axios(`http://api.openweathermap.org/data/2.5/weather?q=${city},&APPID=a9f241787286337a94be93e653a870c1`)
-
+        const data = axios(`https://api.openweathermap.org/data/2.5/weather?q=${city},&APPID=a9f241787286337a94be93e653a870c1`)
+        console.log(data)
         data.then(
             function (value) {
                 console.log(value.data.main.temp)
@@ -68,7 +68,7 @@ function Weather() {
                 <div className="flex flex-col gap-10 text-2xl ">
 
                     <p>Weather : {weather}</p>
-                    <p>Temparature : {temp} { celcius }</p>
+                    <p>Temparature : {temp} {celcius}</p>
                     <p>Description : {desc}</p>
                 </div>
             </div>
